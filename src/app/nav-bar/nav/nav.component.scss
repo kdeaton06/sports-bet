@@ -1,0 +1,81 @@
+@import '../../app.component';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration:  none;
+    color: $ghost-white;
+  }
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-imperial-blue;
+    font-size: 1.2em;
+    height: 35px;
+
+    .left-nav {
+      color: $rich-black;
+      margin-left: 25px;
+    }
+
+    .right-nav {
+      display: flex;
+      justify-content: space-around;
+
+      span {
+        margin-right: 35px;
+      }
+    }
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $cyan;
+    font-size: 1em;
+    height: 50px;
+
+    .left-nav{
+      display: flex;
+      flex-direction: row;
+
+      .logo {
+        width: 50%;
+        height: auto;
+        margin: 0px 15px;
+      }
+
+      .sport-container {
+        display: flex;
+        align-items: center;
+        margin: 0px 15px;
+        height: 50px;
+
+        .sports {
+          color: $rich-black;
+        }
+      }
+
+      .active{  
+        background-color: $international-orange;
+      }
+    }
+
+    .right-nav {
+      display: flex;
+      justify-content: flex-end;
+
+      .search {
+        margin-right: 25px;
+        background-color: $ghost-white;
+        width: 200px;
+        height: 25px;;
+      }
+    }
+  }
+}

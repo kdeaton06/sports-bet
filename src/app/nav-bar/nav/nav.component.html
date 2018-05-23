@@ -1,0 +1,57 @@
+<header>
+  <nav class="container">
+    <div class="top-nav">
+      <div class="left-nav">
+        <span class='title'>Sports Bet</span>
+      </div>
+
+      <div class="right-nav">
+        <div *ngIf="isLoggedIn(); then loggedIn; else loggedOut"></div>
+        <!-- User is Logged In -->
+        <ng-template #loggedIn>
+          <span>
+            <a href="#">$50.00</a>
+          </span>
+          <span>
+            <a href="#">Deposit</a>
+          </span>
+          <span>
+            <a href="#">kdeaton06</a>
+          </span>
+          <span>
+            <a href="#">Logout</a>
+          </span>
+        </ng-template>
+        <!-- User is Logged Out -->
+        <ng-template #loggedOut>
+          <span>
+            <a href="#">Login</a>
+          </span>
+          <span>
+            <a href="#">Register</a>
+          </span>
+          <span>
+            <a href="#">Contact Us</a>
+          </span>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="bottom-nav">
+      <div class="left-nav">
+        <span>
+          <img src="../../../assets/images/logo.png" class="logo">
+        </span>
+        <div *ngFor="let sport of sports" [ngClass]="{active: sport==='NFL'}">
+          <div class="sport-container">
+            <a href="#" class="sports">{{sport}}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-nav">
+        <div class="search">SEARCH BAR</div>
+      </div>
+    </div>
+  </nav>
+</header>
