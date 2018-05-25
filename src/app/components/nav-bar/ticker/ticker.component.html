@@ -1,0 +1,12 @@
+<div class="ticker-container">
+  <h2>Upcoming Games</h2>
+  <ul class="games">
+    <li class="game" *ngFor="let game of nflGames">
+      <div>
+        <span>{{game.homeTeam | uppercase }} vs {{game.awayTeam | uppercase }}</span>
+        <span>{{game.dateStamp}}</span>
+        <span>{{game.timeStamp}}</span>
+      </div>
+    </li>
+  </ul>
+</div>
