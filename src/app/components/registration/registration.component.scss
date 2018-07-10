@@ -1,0 +1,76 @@
+@import '../../app.component';
+
+#registration {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-imperial-blue;
+  max-width: 300px;
+  padding: 30px;
+  color: $ghost-white;
+  margin-top: 5px;
+
+  h1 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+
+    label {
+      font-size: 1em;
+      margin-bottom: 5px;
+    }
+
+    input {
+      height: 25px;
+      margin-bottom: 20px;
+    }
+
+    #state {
+      height: 25px;
+      font-size: 1em;
+      margin-bottom: 20px;
+      appearance: none;
+      border-radius: 0px;
+    }
+
+    #birthday { 
+      display: flex;
+      justify-content: space-between;
+    
+      select {
+        display: flex;
+        flex-grow: 1;
+        height: 25px;
+        font-size: 1em;
+        margin-bottom: 20px;
+        appearance: none;
+        border-radius: 0px;
+      }
+
+      #month, #day {
+        margin-right: 10px;
+      }
+    }
+
+    #submit {
+      background-color: $cyan;
+      height: 35px;
+      font-size: 1.2em;
+      color: $ghost-white;
+    }
+
+  }
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 15px;
+    color: $ghost-white;
+  }
+}
