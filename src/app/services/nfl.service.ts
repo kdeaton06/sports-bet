@@ -1,19 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Game } from '../models/game';
 
-// const httpOptions = {
-//   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-// };
-
 @Injectable({
   providedIn: 'root'
 })
 export class NflService {
-  //private gameUrl = '';
   private games: Game[]
   
   constructor(
-    //private http: HttpClient
   ) { }
 
   getNflGames(): Game[] {
@@ -59,7 +53,47 @@ export class NflService {
           timeStamp: '9:00 PM',
           homeOdds: '+401',
           awayOdds: '-275'
-      }
+      },
+      {
+        id: 5,
+        sport: 'nfl',
+        homeTeam: 'new york',
+        awayTeam: 'oakland',
+        dateStamp: date,
+        timeStamp: '1:00 PM',
+        homeOdds: '+150',
+        awayOdds: '-175'
+    },
+    {
+        id: 6,
+        sport: 'nfl',
+        homeTeam: 'los angeles',
+        awayTeam: 'houston',
+        dateStamp: date,
+        timeStamp: '1:00 PM',
+        homeOdds: '+110',
+        awayOdds: '-250'
+    },
+    {
+        id: 7,
+        sport: 'nfl',
+        homeTeam: 'san francisco',
+        awayTeam: 'miami',
+        dateStamp: date,
+        timeStamp: '4:30 PM',
+        homeOdds: '+200',
+        awayOdds: '-185'
+    },
+    {
+        id: 8,
+        sport: 'nfl',
+        homeTeam: 'green bay',
+        awayTeam: 'seattle',
+        dateStamp: date,
+        timeStamp: '9:00 PM',
+        homeOdds: '+401',
+        awayOdds: '-275'
+    }
     ];
 
     return this.games;

@@ -17,7 +17,6 @@ export class TickerComponent implements OnInit {
   }
 
   getNflGames(): void {
-    //this.nflSerice.getNflGames().subscribe(nflGames => this.nflGames = nflGames);
     this.nflGames = this.nflSerice.getNflGames();
   }
 }

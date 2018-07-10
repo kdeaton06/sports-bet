@@ -1,0 +1,15 @@
+<main>
+  <header>
+    <h2>Todays's Games</h2>
+  </header>
+  <section class="games-container">
+    <div class="game" *ngFor="let game of nflGames">
+      <div>
+        <a href ="">
+          <img src="../../../assets/images/Ravens-Patriots.jpg"/>
+          <span>{{game.homeTeam | uppercase }} vs {{game.awayTeam | uppercase }}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
